@@ -9,22 +9,21 @@ public class Numbers {
 	public static void main(String[] args) {
 		System.out.println(sumDigit(15));
 		
-		//System.out.println(convertNumToText(20));
-		//System.out.println(convertNumToText(70));
-		//System.out.println(convertNumToText(11));
-		//System.out.println(convertNumToText(1));
-		//System.out.println(convertNumToText(2));
-		//System.out.println(convertNumToText(3));
-		//System.out.println(convertNumToText(4));
-		//System.out.println(convertNumToText(5));
-		//System.out.println(convertNumToText(6));
-		//System.out.println(convertNumToText(7));
-		//System.out.println(convertNumToText(8));
-		//System.out.println(convertNumToText(9));
-		//System.out.println(convertNumToText(99));
-		//System.out.println(convertNumToText(10));
-		//System.out.println(convertNumToText(89));
-		numToTextPartTwo();
+		System.out.println(convertNumToText(20));
+		System.out.println(convertNumToText(70));
+		System.out.println(convertNumToText(11));
+		System.out.println(convertNumToText(1));
+		System.out.println(convertNumToText(2));
+		System.out.println(convertNumToText(3));
+		System.out.println(convertNumToText(4));
+		System.out.println(convertNumToText(5));
+		System.out.println(convertNumToText(6));
+		System.out.println(convertNumToText(7));
+		System.out.println(convertNumToText(8));
+		System.out.println(convertNumToText(9));
+		System.out.println(convertNumToText(99));
+		System.out.println(convertNumToText(10));
+		System.out.println(convertNumToText(89));
 	}
 	
 	public static int sumDigit(int number) {
