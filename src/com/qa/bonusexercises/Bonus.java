@@ -1,5 +1,7 @@
 package com.qa.bonusexercises;
 
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Bonus {
 
@@ -10,8 +12,6 @@ public class Bonus {
 		 * System.out.println(isPrimeNumber(7)); System.out.println(isPrimeNumber(51));
 		 * System.out.println(isPrimeNumber(17));
 		 * 
-		 * greatCommonDivisor(12, 6); greatCommonDivisor(12, 2); greatCommonDivisor(12,
-		 * 5);
 		 * 
 		 * BottlesOfBeerSong();
 		 */
@@ -19,6 +19,9 @@ public class Bonus {
 		System.out.println(riceBags(0, 2, 5));
 		System.out.println(riceBags(2, 0, 5));
 		System.out.println(riceBags(1, 2, 11));
+		
+		greatestPrimeFactor(200);
+		greatestPrimeFactor(455);
 	}
 
 	//A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Write a method that checks if a 
@@ -103,6 +106,20 @@ public class Bonus {
 		} 
 		
 		return false;
+	}
+	
+	public static void greatestPrimeFactor(int num) {
+		int provisionalNum = num / 2;
+		ArrayList<Integer> divisors = new ArrayList<Integer>();
+		
+		while (provisionalNum >= 2) {
+			if (num % provisionalNum == 0 && isPrimeNumber(provisionalNum)) {
+				divisors.add(provisionalNum);
+			}
+			provisionalNum--;
+		}
+		
+		System.out.println("The prime factor of " + num + " are: " + divisors + " and the gratest prime number is: " + Collections.max(divisors));
 	}
 	
 
