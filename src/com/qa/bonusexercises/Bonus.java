@@ -16,7 +16,9 @@ public class Bonus {
 		 * BottlesOfBeerSong();
 		 */
 		
-		challenge3000(3000, "Team 3");
+		System.out.println(riceBags(0, 2, 5));
+		System.out.println(riceBags(2, 0, 5));
+		System.out.println(riceBags(1, 2, 11));
 	}
 
 	//A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Write a method that checks if a 
@@ -77,11 +79,30 @@ public class Bonus {
 		}
 	}
 	
-	public static void challenge3000(int numTimes, String teamName) {
-		if (numTimes > 0) {
-			System.out.println(teamName);
-			challenge3000(numTimes - 1, teamName);
-		}
+	//Provided that you have a given number of small rice bags (1 kilo each) and big rice bags (5 kilos each), 
+	//write a method that returns true if it is possible to make a package with goal kilos of rice.
+	public static boolean riceBags(int smallBag, int largeBag, int goal) {
+		if (smallBag > 0 && largeBag > 0) {
+			if (smallBag + largeBag * 5 >= goal) {
+				return true;
+			} 
+			
+			return false;
+		} else if (smallBag > 0) {
+			if (smallBag >= goal) {
+				return true;
+			}
+			
+			return false;
+		} else if (largeBag > 0) {
+			if (largeBag * 5 >= goal) {
+				return true;
+			} 
+			
+			return false;
+		} 
+		
+		return false;
 	}
 	
 
