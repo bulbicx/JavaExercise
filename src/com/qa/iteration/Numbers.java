@@ -201,7 +201,7 @@ public class Numbers {
 		return text;
 	}
 	
-	//Transfrom numbers from 100 to 999 into text
+	//Transform numbers from 100 to 999 into text
 	public static String transformHundredsToText(int number, int firstDigit, String[] listStringHundreds, String[] listStringTens, String[] listString11To19, int[] listOneToNine, String[] listStringOneToNine) {
 		String text = "";
 		
