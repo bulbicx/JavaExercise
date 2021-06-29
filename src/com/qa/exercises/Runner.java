@@ -8,6 +8,7 @@ public class Runner {
 	public static void main(String[] args) {
 		
 		List<User> people = new ArrayList<User>();
+		List<String> middleNames = List.of("grik", "grok");
 		
 		User u1 = new User();
 		User u2 = new User();
@@ -18,21 +19,21 @@ public class Runner {
 		u1.setAge(29);
 		u1.setEmail("Lucas@gmail.com");
 		u1.setTelephoneNo("07123123123");
-		u1.setMiddleNames("Kabr Parol");
+		u1.setMiddleNames(middleNames);
 		
 		u2.setForename("Maria");
 		u2.setSurname("Kabeza");
 		u2.setAge(32);
 		u2.setEmail("Maria@gmail.com");
 		u2.setTelephoneNo("07333123123");
-		u2.setMiddleNames("Lorel Val");
+		u2.setMiddleNames(middleNames);
 		
 		u3.setForename("Matteush");
 		u3.setSurname("Polinski");
 		u3.setAge(34);
 		u3.setEmail("Matteush@gmail.com");
 		u3.setTelephoneNo("07444423123");
-		u3.setMiddleNames("Ler Pasolina");
+		u3.setMiddleNames(middleNames);
 		
 		people.add(u1);
 		people.add(u2);
