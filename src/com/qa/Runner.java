@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.qa.apackage.Calculator;
+import com.qa.exception.Division;
 import com.qa.inheritance.Animal;
 import com.qa.inheritance.Bird;
 import com.qa.inheritance.Dog;
@@ -18,6 +19,9 @@ public class Runner {
 	private static Calculator calculator = new Calculator();
 	
 	public static void main(String[] args) {
+		
+		Division division = new Division();
+		division.operation();
 
 //		Dog myDog = new Dog("hehe", 4);
 //		System.out.println(myDog.getSpecies());
@@ -25,7 +29,7 @@ public class Runner {
 //		myDog.eat();
 //		myDog.bark();
 //		
-//		Bird myBird = new Bird();
+//		Bird myBird = new Bird();5
 //		myBird.eat();
 //		myBird.chipping();
 //		myBird.setName("Nice birdy");
@@ -47,8 +51,8 @@ public class Runner {
 //		String s = scanner.nextLine();
 //		
 //		System.out.println(s);
-		getInputAndPerformCalculation();
-		scanner.close();
+//		getInputAndPerformCalculation();
+//		scanner.close();
 		
 		
 		//Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
@@ -111,3 +115,4 @@ public class Runner {
 		return scanner.nextDouble();
 	}
 }
+
